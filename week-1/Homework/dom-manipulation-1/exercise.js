@@ -2,27 +2,32 @@
 Task 1
 =======
 Write JavaScript below that logs:
-    1. all the "p" element nodes of the document,
+   
+1. all the "p" element nodes of the document,
     --> should log a list of nodes with a length of 6 */
   const all_p = Array.from(document.querySelectorAll("p"));
   console.log(all_p);
   
-    /* 2. the first div element node
+    
+  /* 2. the first div element node
     --> should log the ".site-header" node */
    const first_div = document.querySelector("div.site-header"); 
    console.log(first_div);
 
-    /*3. the element with id "jumbotron-text"
+    
+   /*3. the element with id "jumbotron-text"
     --> should log the "#jumbotron-text" node */
    const new_element = document.getElementById("jumbotron-text");
    console.log(new_element);
 
+   
    /* 4. all the "p" elements of contained inside  the .primary-content element node
     --> should log a list of nodes with a length of 3
    */
    /* const p_primary = Array.from(document.querySelectorAll(".primary_content p"));
     
     console.log(p_primary);*/
+    
     document.addEventListener("DOMContentLoaded", function() {
         const primaryContent = document.querySelector(".primary-content");
       
@@ -34,8 +39,7 @@ Write JavaScript below that logs:
           console.log("No .primary-content element found.");
         }
       });
-      
-   
+       
 /*
 Task 2
 ======
@@ -47,7 +51,6 @@ const alert_Button = document.getElementById("alertBtn");
 alert_Button.addEventListener("click", function() {
   alert("Thanks for visiting Bikes for Refugees!");
 });
-
 
 /*
 Task 3
@@ -108,7 +111,6 @@ add_anothertext.addEventListener('click', function() {
     console.log(new_p);
 });
 
-
 /*
 Task 7
 ======
@@ -126,5 +128,3 @@ change_thecolor.addEventListener("click",function () {
     document.body.style.backgroundColor = colors[currentIndex];
     currentIndex = (currentIndex + 1) % colors.length;
 });
-
-
